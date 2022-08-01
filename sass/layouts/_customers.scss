@@ -1,17 +1,31 @@
 .customers__list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   gap: 30px;
 }
 
+.customers__item {
+  width: calc((100% - 30px) / 2);
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+  }
+
+}
+
+
+
 .customers__link {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4%;
