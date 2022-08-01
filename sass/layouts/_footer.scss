@@ -9,7 +9,26 @@
 .footer__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 60px;
+  margin: 0;
+
+  @media screen and (min-width: 768px) {
+    gap: 0;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 0;
+    justify-content: space-between;
+  }
+}
+
+.address {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer__logo--white {
@@ -58,6 +77,11 @@
 .connection {
   display: flex;
   flex-direction: column;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .connection__title {
@@ -99,8 +123,9 @@
 }
 
 .email-field {
-  width: 358px;
+  width: 100%;
   height: 50px;
+  margin-bottom: 20px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -119,6 +144,24 @@
     display: flex;
     align-items: center;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+
+}
+
+.sign {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-top: 0;
+  }
 }
 
 .sign__button {
@@ -126,7 +169,10 @@
   display: inline-flex;
   align-items: center;
 
-  margin-left: 12px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
+
   padding: 10px 28px;
 
   border-radius: 4px;
