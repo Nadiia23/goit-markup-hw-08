@@ -13,50 +13,52 @@
   background-position: center;
   background-size: cover;
   background-color: var(--background-grey-color);
+  flex-grow: 1;
 
-  @media screen and (min-width: 480px) {
+  @include retina {
     background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero-480@2x.jpg);
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/hero-768.jpg);
+
+    @include retina {
+      background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/hero-768.jpg);
+        ),
+        url(../images/hero-768@2x.jpg);
+    }
   }
 
-  @media screen and (min-width: 768px) {
+  @include desktop {
+    padding: 272px 100px 208px;
     background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero-768@2x.jpg);
-  }
+      url(../../images/hero-1600.jpg);
 
-  @media screen and (min-width: 1200px) {
-    background-image: linear-gradient(
+    @include retina {
+      background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/hero-1600.jpg);
-  }
-
-  @media screen and (min-width: 1200px) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/hero-1600@2x.jpg);
+        ),
+        url(../images/hero-1600@2x.jpg);
+    }
   }
 }
 
@@ -64,7 +66,7 @@
   padding: 118px 60px;
   text-align: center;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     padding: 118px 204px;
   }
 }
@@ -84,7 +86,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     font-size: 44px;
     line-height: 1.4;
   }
@@ -113,7 +115,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     min-width: 216px;
   }
 }

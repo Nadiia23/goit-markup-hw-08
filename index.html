@@ -26,7 +26,7 @@
         <a href="./index.html" class="header__logo link"
           >Web<span class="header__logo--dark">Studio</span></a
         >
-        <nav class="navigation">
+        <!-- <nav class="navigation">
           <ul class="navigation__list list">
             <li class="navigation__item">
               <a href="./index.html" class="navigation__link link current"
@@ -42,8 +42,8 @@
               <a href="" class="navigation__link link">Контакти</a>
             </li>
           </ul>
-        </nav>
-        <div class="contacts">
+        </nav> -->
+        <!-- <div class="contacts">
           <ul class="contacts__list list">
             <li class="contacts__item">
               <a href="mailto:info@devstudio.com" class="contacts__link link">
@@ -60,7 +60,7 @@
               >
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </header>
 
@@ -142,25 +142,48 @@
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="efforts__list list">
             <li class="efforts__item">
-              <img
-                src="./images/box1.jpg"
+              <picture>
+                <source srcset="./images/work-1-370.jpg 1x,
+                ./images/work-1-370-2x.jpg 2x
+              "
+              media="(min-width: 1200px)" />
+                <img
+                src="./images/work-1-370.jpg"
                 alt="Планшет,клавіатура"
                 width="370"
               />
+              </picture>
+              
               <p class="efforts__description">Десктопні додатки</p>
             </li>
 
             <li class="efforts__item">
-              <img src="./images/box2.jpg" alt="Лептоп,телефон" width="370" />
+              <picture>
+                <source srcset="./images/work-2-370.jpg 1x,
+                ./images/work-2-370-2x.jpg 2x"
+                
+              media="(min-width: 1200px)" />
+              <img
+              src="./images/work-2-370.jpg"
+              alt="Лептоп, телефон"
+              width="370"
+              />
+              </picture>
               <p class="efforts__description">Мобільні додатки</p>
             </li>
 
             <li class="efforts__item">
+              <picture>
+                <source srcset="./images/work-3-370.jpg 1x,
+                ./images/work-3-370-2x.jpg 2x"
+
+              media="(min-width: 1200px)" />
               <img
-                src="./images/box3.jpg"
-                alt="Палітра кольорів на планшеті"
-                width="370"
+              src="./images/work-3-370.jpg"
+              alt="Палітра кольорів на планшеті"
+              width="370"
               />
+              </picture>
               <p class="efforts__description">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -174,11 +197,33 @@
           <ul class="team__list list">
             
               <li class="team__item">
-                <img
+                <picture>
+                  <source
+                    srcset="./images/team-one-270.jpg 1x,
+                    ./images/team-one-270-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./images/team-one-354.jpg 1x,
+                    ./images/team-one-354-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/team-one-450.jpg  1x,
+                    ./images/team-one-450-2x.jpg  2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+              
+                  <img
                   src="./images/img.jpg"
                   alt="Product Designer"
                   width="450"
-                />
+                  />
+                </picture>
+                
                 <div class="team__members">
                   <h3 class="members__name">Ігор Дем'яненко</h3>
                   <p class="members__position">Product Designer</p>
@@ -217,15 +262,37 @@
                 </ul>
               </div>
               </li>
-          
-
         
               <li class="team__item">
-                <img
+                <picture>
+                  <source
+                    srcset="./images/team-two-270.jpg 1x,
+                    ./images/team-two-270-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="./images/team-two-354.jpg 1x,
+                    ./images/team-two-354-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="./images/team-two-450.jpg  1x,
+                    ./images/team-two-450-2x.jpg  2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+
+                  <img
                   src="./images/img(1).jpg"
                   alt="Frontend Developer"
-                  width="450"
-                />
+                  width="450"/>
+
+                </picture>
+                
                 <div class="team__members">
                   <h3 class="members__name">Ольга Репина</h3>
                   <p class="members__position">Frontend Developer</p>
@@ -268,7 +335,35 @@
 
             
               <li class="team__item">
-                <img src="./images/img(2).jpg" alt="Marketing" width="450" />
+                <picture>
+                  <source
+                    srcset="./images/team-three-270.jpg 1x,
+                    ./images/team-three-270-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="./images/team-three-354.jpg 1x,
+                    ./images/team-three-354-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="./images/team-three-450.jpg  1x,
+                    ./images/team-three-450-2x.jpg  2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+
+                  <img 
+                  src="./images/img(2).jpg" 
+                  alt="Marketing" 
+                  width="450" />
+                  
+                </picture>
+          
                 <div class="team__members">
                   <h3 class="members__name">Микола Тарасов</h3>
                   <p class="members__position">Marketing</p>
@@ -307,11 +402,37 @@
                 </ul>
               </div>
               </li>
-          
-
          
               <li class="team__item">
-                <img src="./images/img(3).jpg" alt="UI Designer" width="450" />
+                <picture>
+                  <source
+                    srcset="./images/team-four-270.jpg 1x,
+                    ./images/team-four-270-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="./images/team-four-354.jpg 1x,
+                    ./images/team-four-354-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="./images/team-four-450.jpg  1x,
+                    ./images/team-four-450-2x.jpg  2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+
+                  <img 
+                  src="./images/img(3).jpg" 
+                  alt="UI Designer" 
+                  width="450" />
+                  
+                </picture>
+                
                 <div class="team__members">
                   <h3 class="members__name">Михайло Єрмаков</h3>
                   <p class="members__position">UI Designer</p>
