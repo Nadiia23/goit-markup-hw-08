@@ -99,6 +99,10 @@
 
 .projects__wrap.pad {
   padding: 38px 24px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 20px 24px;
+}
 }
 
 .projects .title {
