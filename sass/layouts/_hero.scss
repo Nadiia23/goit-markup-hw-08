@@ -8,12 +8,22 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero-480.jpg);
+    url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: var(--background-grey-color);
   flex-grow: 1;
+
+  @include mobile {
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-480.jpg);
+
+  }
 
   @include retina {
     background-image: linear-gradient(
