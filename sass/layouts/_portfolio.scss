@@ -46,16 +46,19 @@
   gap: 30px;
 }
 
+
 .projects-list__item {
+  width: 100%;
+
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
-  }
+   }
 
-  @media screen and (min-width: 1200px) {
+   @media screen and (min-width: 1200px) {
     width: calc((100% - 60px) / 3);
-  }
-}
+    }
 
+}
 
 .projects-list__item:hover,
 .projects-list__item:focus {
@@ -92,6 +95,10 @@
 .projects__wrap {
   padding: 20px 24px;
   border: 1px solid var(--border);
+}
+
+.projects__wrap.pad {
+  padding: 38px 24px;
 }
 
 .projects .title {
