@@ -79,6 +79,10 @@
   @include tablet {
     padding: 118px 204px;
   }
+
+  @include desktop {
+    padding: 0;
+  }
 }
 
 .hero__title {

@@ -53,6 +53,12 @@
   padding: 0;
 }
 
+.address__item {
+  font-size: 14px;
+  line-height: 1.7;
+  
+}
+
 .address__item:not(:last-child) {
   margin-bottom: 9px;
 }

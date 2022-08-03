@@ -1,5 +1,4 @@
 .header {
-  position: relative;
   outline: 1px solid #ececec;
   border: none;
 }
@@ -31,18 +30,18 @@
 .header__container {
   display: flex;
   align-items: center;
-  padding: 10px 0 10px 0;
-  @media screen and (min-width: 768px) {
-    padding: 0;
-}
+//   padding: 10px 0 10px 0;
+//   @media screen and (min-width: 768px) {
+//     padding: 0;
+// }
 }
 
 .menu-button {
-  display: inline-flex;
+  display: flex;
   margin-left: auto;
   padding: 0;
   border: none;
-  background-color: transparent;
+  background-color: rgba(0,0,0,0);
   z-index: 2;
   color: var(--black-color);
 
@@ -52,6 +51,10 @@
     display: none;
 }
 
+}
+
+.menu-button:hover {
+  color: #2196F3;
 }
 
 .menu-button .icon-open {
@@ -70,14 +73,16 @@
 
   @media screen and (max-width: 767px) {
     display: none;
-    position: absolute;
+    position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #ffffff;
-  padding: 40px 48px;
+  // padding: 40px 48px;
+  height: 100%;
 
   z-index: 1;
+
 
   &.is-open {
     display: block;
@@ -89,9 +94,23 @@
 }
 }
 
+.container-wrap {
+  @media screen and (max-width: 767px) {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: auto;
+  padding: 0 40px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
 
 .navigation {
-  margin-bottom: 302px;
   @media screen and (min-width: 768px) {
     margin: 0;
     display: flex;
@@ -104,13 +123,13 @@
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 42px;
-    margin-right: 69px;
+    margin-right: 59px;
 }
 
 @media screen and (min-width: 1200px) {
   display: flex;
   gap: 48px;
-  margin-right: 280px;
+  margin-right: 252px;
 }
   
 }
@@ -279,4 +298,5 @@ color: #2196F3;
   border-right: 1px solid transparent;
 
 }
+
 
